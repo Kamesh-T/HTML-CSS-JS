@@ -1,0 +1,53 @@
+
+
+body{
+     background:linear-gradient(90deg,red,orange,yellow,green,blue,indigo,violet);
+}
+#title{
+  font-weight:1000;
+}
+#title , #description{
+  color:black;
+  text-align:center;
+    background-color:white;
+}
+#survey-form{
+  width:50%;
+  background-color: lightblue;  
+  padding:25px;
+  border-radius:10px;
+  margin:0 auto;
+}
+input,select,textarea{
+  display:block;
+  margin:20px;
+}
+input[type="radio"],input[type="checkbox"]{
+  display:inline;
+}
+label{
+  display:block;
+  font-size:20px;
+}
+#radio_1,#radio_2,#radio_3,#check_1,#check_2,#check_3{
+  display:inline;
+}
+
+input[type="text"],input[type="number"],input[type="email"],select,textarea{
+   width:80%;
+  height:5%;
+  padding:10px;
+}
+
+input[type="submit"]{
+  padding:10px;
+  font-size:20px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:20px;
+  background:linear-gradient(45deg,white,lightgray,white);
+  border-radius:10px;
+   /* width:80%; */
+}
+
+

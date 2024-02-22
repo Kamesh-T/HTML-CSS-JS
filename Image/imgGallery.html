@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Image Gallery</title>
+        <meta name="view-port" content="width=device-width,initial-scale=1.0">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            header{
+                background-color:darkmagenta;
+                color: white;
+                text-align: center;
+                padding: 50px;
+                border-bottom:solid orange 5px;
+            }
+            img{
+                height:150px;
+                width: 150px;
+                margin:auto;
+                border-radius: 5px;
+                object-fit: cover;
+            }
+            .container{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+       
+            p{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Image Gallery</h1>
+        </header>
+        <div class="container">
+            <div><img src="./Image_1.jpg" alt="Image1"><p>Lorem ipsum </p></div>
+            <div><img src="./Image_2.jpg" alt="Image2"><p>Lorem ipsum </p></div>
+            <div><img src="./Image_3.jpg" alt="Image3"><p>Lorem ipsum </p></div>
+            <div><img src="./Image_4.jpg" alt="Image4"><p>Lorem ipsum </p></div>
+            <div><img src="./Image_5.jpg" alt="Image5"><p>Lorem ipsum </p></div>
+            <div><img src="./Image_6.jpg" alt="Image6"><p>Lorem ipsum</p></div>
+            <div><img src="./Image_7.jpg" alt="Image7"><p>Lorem ipsum</p></div>
+            <div><img src="./Image_8.jpg" alt="Image8"><p>Lorem ipsum </p></div>
+            <div><img src="./Image_9.jpg" alt="Image9"><p>Lorem ipsum </p></div>
+            <div><img src="./Image_10.jpg" alt="Image10"><p>Lorem ipsum </p></div>
+        </div>
+    </body>
+</html>
