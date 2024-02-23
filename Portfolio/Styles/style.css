@@ -1,0 +1,107 @@
+*{
+    border: 0;
+    padding:0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+    background-color: black;
+}
+nav > a{
+    text-decoration: none;
+    padding: 2%;
+    font-size:x-large;
+    color: white;
+}
+
+nav > img{
+    width: 7%;
+    height: 7%;
+}
+#about p{
+    font-family:sans-serif;
+    font-size:x-large;
+}
+p{
+    font-family: sans-serif;
+    font-size:x-large;
+}
+#about{
+    color: black;
+    background-color:white;
+    padding-bottom: 2%;
+}
+h2{
+    padding-top:5%;
+    padding-bottom: 2%;
+    font-size: x-large;
+
+}
+h3{
+    padding: 2%;
+    font-size: x-large;
+}
+#skills{
+    background-color:black;
+    color: white;
+}
+.container{
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom:2% ;
+}
+img{
+    width:50%;
+    height:50%;
+    object-fit:contain;
+}
+
+.container div{
+    flex-basis: 50%;    
+}
+.container-1 , #certn{
+    padding: 1%;
+}
+.container-1 div,#certn div{
+    padding: 2%;
+}
+#git{
+    width: 20px;
+    height: 20px;
+}
+button{
+    padding: 2%;
+    background-color:chartreuse;
+    border-radius:8px;
+    margin:1%;
+}
+
+#contact{
+    background-color: black;
+    padding: 2%;
+    color: white;
+}
+#contact > a >img{
+    width:10%;
+    height:10%;
+}
+#contact > a{
+    padding: 2%;
+}
+
+h2:hover{
+    font-size:xx-large;
+    color: blue;
+    transition: 1s;
+}
+#dev:hover{
+    font-size:xx-large ;
+    color:crimson;
+    transition: 1s;
+}
