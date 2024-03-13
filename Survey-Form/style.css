@@ -1,7 +1,6 @@
-
-
 body{
-     background:linear-gradient(90deg,red,orange,yellow,green,blue,indigo,violet);
+
+  background:linear-gradient(45deg,lightblue,blue,lightblue); 
 }
 #title{
   font-weight:1000;
@@ -9,45 +8,54 @@ body{
 #title , #description{
   color:black;
   text-align:center;
-    background-color:white;
 }
 #survey-form{
-  width:50%;
-  background-color: lightblue;  
+  max-width:600px;
+  background-color:white; 
   padding:25px;
   border-radius:10px;
   margin:0 auto;
 }
 input,select,textarea{
-  display:block;
   margin:20px;
 }
-input[type="radio"],input[type="checkbox"]{
-  display:inline;
-}
+
 label{
   display:block;
   font-size:20px;
 }
-#radio_1,#radio_2,#radio_3,#check_1,#check_2,#check_3{
-  display:inline;
-}
 
 input[type="text"],input[type="number"],input[type="email"],select,textarea{
-   width:80%;
+  width:80%;
   height:5%;
   padding:10px;
 }
 
-input[type="submit"]{
+input[type="submit"],input[type="reset"]{
   padding:10px;
   font-size:20px;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:20px;
-  background:linear-gradient(45deg,white,lightgray,white);
+  margin:2px auto;
   border-radius:10px;
-   /* width:80%; */
+  color: white;
 }
 
+input[type="submit"]{
+  background-color: rgb(36, 170, 65);
+}
 
+input[type="reset"]{
+  background-color:rgb(245, 44, 44);
+}
+#copyright{
+  font-size: x-large;
+  font-weight:700;
+  margin: auto;
+  text-align: center;
+  padding:2%;  
+}
+
+@media screen and (max-width:500px){
+  #survey-form{
+    margin:0 2%;
+  }     
+}
