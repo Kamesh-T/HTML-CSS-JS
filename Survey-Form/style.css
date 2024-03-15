@@ -1,6 +1,4 @@
-body{
-
-  background:linear-gradient(45deg,lightblue,blue,lightblue); 
+body{ background:linear-gradient(45deg,lightblue,blue,lightblue); 
 }
 #title{
   font-weight:1000;
@@ -54,8 +52,4 @@ input[type="reset"]{
   padding:2%;  
 }
 
-@media screen and (max-width:500px){
-  #survey-form{
-    margin:0 2%;
-  }     
-}
+
