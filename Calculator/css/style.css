@@ -1,0 +1,87 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:blue;
+}
+h1{
+    text-align: center;
+    padding:1rem;
+}
+input[type="button"],input[type="text"]{
+    padding:1rem;
+    border:solid black 3px;
+    border-radius:0.5rem;
+}
+.container{
+    max-width:500px;
+    margin:5% auto 0 auto;
+    background-color:white;
+    padding:1.5rem;
+    border-radius:0.5rem;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+}
+.btns{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap:0.5rem;
+    justify-content: center;
+}
+.btns > input[type="button"]{
+    flex-basis:20%;
+}
+input[name='opt']{
+    background-color: rgb(248, 172, 30);
+    transition:0.5s;
+}
+input[name="equl"]{
+    background-color: rgb(86, 224, 86);
+    transition:0.5s;
+}
+#clear{
+    background-color:rgb(248, 42, 42);
+    transition:0.5s;
+}
+input[name='opt']:focus{
+    background-color:rgb(252, 242, 242);
+    box-shadow:0 0  10px 5px rgb(248, 172, 30);
+}
+input[name="equl"]:focus{
+    background-color:rgb(252, 242, 242);
+    box-shadow:0 0  10px 5px rgb(86, 224, 86);
+}
+#clear:focus{
+    background-color:rgb(252, 242, 242);
+    box-shadow:0 0  10px 5px rgb(248, 42, 42);
+}
+input[type="text"]:focus{
+    box-shadow:0 0  10px 5px rgb(86, 224, 86);
+}
+.btns > input[type="button"]:focus{
+    background-color:white;
+}
+@media screen and (max-width:600px) {
+    .container{
+        margin:5%;
+    }
+}
+p{
+    text-align: center;
+    font-size: larger;
+    padding:1rem;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+.container:hover{
+    box-shadow:0 0  10px 5px black;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="js/Calc.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class ="container">
+        <h1>Calculator</h1>
+        <form>
+            <input type="text" id="display" value="" size="30"> 
+            <div class="btns">
+                <input type="button" value="1" onclick="Add(1)">
+                <input type="button" value="2" onclick="Add(2)">
+                <input type="button" value="3" onclick="Add(3)">
+                <input type="button" value="+" onclick="Add('+')" name="opt">
+                <input type="button" value="4" onclick="Add(4)">
+                <input type="button" value="5" onclick="Add(5)">
+                <input type="button" value="6" onclick="Add(6)">
+                <input type="button" value="-" onclick="Add('-')" name="opt">
+                <input type="button" value="7" onclick="Add(7)">
+                <input type="button" value="8" onclick="Add(8)">
+                <input type="button" value="9" onclick="Add(9)">
+                <input type="button" value="*" onclick="Add('*')" name="opt">
+                <input type="button" value="/" onclick="Add('/')" name="opt">
+                <input type="button" value="0" onclick="Add(0)">
+                <input type="button" value="." onclick="Add('.')">
+                <input type="button" value="=" onclick="Eval('=')" name="equl">
+            </div>
+            
+            <input type="button" value="Clear" id="clear" onclick="Clr()">
+        </form>
+    </div>
+    <p title="visit profile">&#169  <a href="https://github.com/Kamesh-T/" target="_self">Kamesh</a> - <span id="copyright"> </span></p>        
+</body>
+</html>
