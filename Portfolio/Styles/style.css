@@ -3,11 +3,11 @@
     padding:0;
     margin: 0;
     scroll-behavior: smooth;
+    box-sizing:border-box;
 }
 nav{
     display: flex;
     justify-content: space-around;
-    padding: 2%;
     background-color: black;
 }
 nav > a{
@@ -45,8 +45,8 @@ h3{
     font-size: x-large;
 }
 #skills{
-    background-color:black;
-    color: white;
+    background-color:white;
+    color:black;
 }
 .container{
     padding: 1%;
@@ -63,7 +63,7 @@ img{
 }
 
 .container div{
-    flex-basis: 50%;    
+    flex-basis:15%;    
 }
 .container-1 , #certn{
     padding: 1%;
@@ -84,12 +84,11 @@ button{
 
 #contact{
     background-color: black;
-    padding: 2%;
     color: white;
 }
 #contact > a >img{
-    width:10%;
-    height:10%;
+    width:5%;
+    height:5%;
 }
 #contact > a{
     padding: 2%;
