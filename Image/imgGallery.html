@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Image Gallery</title>
+        <meta name="view-port" content="width=device-width,initial-scale=1.0">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            header{
+                background-color:darkmagenta;
+                color: white;
+                text-align: center;
+                padding: 30px;
+                border-bottom:solid orange 5px;
+                width:100%;
+                position:fixed;
+                top:0;
+            }
+            img{
+                height: 200px;
+                width: 200px;
+                border-radius: 5px;
+                object-fit: cover;
+                margin:7% 5% 0 5%;
+            }
+            .container{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                margin-top:7%;
+            } 
+            
+            @media screen and (max-width:1024px) {
+                .container{
+                    flex-direction: column;
+                    text-align: center;
+                } 
+                img{
+                    width:75%;
+                    height:75%;
+                }
+                div{
+                    margin:5% auto 5% auto;
+                }               
+            }    
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Image Gallery</h1>
+        </header>
+        <section class="container">
+            <div><img src="Image_1.jpg" alt="Image1"></div>
+            <div><img src="Image_2.jpg" alt="Image2"></div>
+            <div><img src="Image_3.jpg" alt="Image3"></div>
+            <div><img src="Image_4.jpg" alt="Image4"></div>
+            <div><img src="Image_5.jpg" alt="Image5"></div>
+            <div><img src="Image_6.jpg" alt="Image6"></div>
+            <div><img src="Image_7.jpg" alt="Image7"></div>
+            <div><img src="Image_8.jpg" alt="Image8"></div>
+            <div><img src="Image_9.jpg" alt="Image9"></div>
+            <div><img src="Image_10.jpg" alt="Image10"></div>
+        </section>
+    </body>
+</html>
