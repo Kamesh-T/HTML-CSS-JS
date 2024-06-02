@@ -10,7 +10,7 @@ body{
   text-align:center;
 }
 #survey-form{
-  max-width:600px;
+  width:60vw;
   background-color:white; 
   padding:5%;
   border-radius:10px;
