@@ -1,0 +1,39 @@
+
+body{
+    padding: 0;
+    border: 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  p{
+    text-align: justify;
+    text-indent:2rem;
+    margin:0.5rem;
+    line-height:1.6;
+  }
+  #main{
+    max-width:80%;
+    margin:0 auto;
+    background-color:lightgrey;
+    padding: 1rem;
+    border-radius:0.5rem;
+    height: auto;
+  }
+  #img-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #image{
+    max-width:100%;
+    height:auto;
+    border-radius: 16px;
+  }
+  img{
+    display:block; 
+  }
+  #img-caption{
+    margin:0.5rem;
+  }
