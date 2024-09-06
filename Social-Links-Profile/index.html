@@ -69,24 +69,24 @@
       font-weight: 400;
       opacity: .5;
     }
+    
+    a button{
+      text-decoration:none;
+      color: white;
+      font-weight: bold;
+      opacity: .75;
+      transition:1s;
+    }
     button{
       background-color: var(--grey-700);
       width:90%;
       padding:2% 0 ; 
       border-style: none;
       border-radius:8px;
-      transition:1s;
     }
-    button:hover,button:focus,
     button a:hover,button a:focus{
       background-color:var(--green);
       color:black;
-    }
-    button a{
-      text-decoration:none;
-      color: white;
-      font-weight: bold;
-      opacity: .75;
     }
     @media screen and (max-width:375px) {
       .container{
@@ -115,11 +115,11 @@
     <h3>Jessica Randall</h3>
     <p class="location">London, United Kingdom</p>
     <p class="title">"Front-end developer and avid reader."</p>
-    <button><a href="#">GitHub</a></button>
-    <button><a href="#">Frontend Mentor</a></button>
-    <button><a href="#">LinkedIn</a></button>
-    <button><a href="#">Twitter</a></button>
-    <button><a href="#">Instagram</a></button>  
+    <a href="#"><button>GitHub</button></a>
+    <a href="#"><button>Frontend Mentor</button></a>
+    <a href="#"><button>LinkedIn</button></a>
+    <a href="#"><button>Twitter</button></a>
+    <a href="#"><button>Instagram</button></a>  
   </div>
   
   <div class="attribution">
