@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <!-- font style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Social links profile</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family:"Inter";
+    }
+    :root{
+      --green:hsl(75, 94%, 57%);
+      --white:hsl(0, 0%, 100%);
+      --grey-700:hsl(0, 0%, 20%);
+      --grey-800:hsl(0, 0%, 12%);
+      --grey-900:hsl(0, 0%, 8%);
+    }
+    p{
+      line-height: 1.6;
+      font-size: 14px;
+    }
+    body{
+      background-color:var(--grey-900);
+      height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+    .container{
+      background-color: var(--grey-800);
+      padding:6% 2%;
+      width:30%;
+      height:70%;
+      border-radius:16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap:3%;
+    }
+    img{
+      width:7rem;
+      height:7rem;
+      border-radius: 50%;
+    }
+    h3{
+      font-weight: 700;
+      opacity: .95;
+    }
+    .location{
+      color: var(--green);
+      font-weight: 600;
+      opacity: .75;
+    }
+    .title{
+      color: var(--white);
+      font-weight: 400;
+      opacity: .5;
+    }
+    button{
+      background-color: var(--grey-700);
+      width:90%;
+      padding:2.5% 0 ; 
+      border-style: none;
+      border-radius:8px;
+    }
+    button a{
+      text-decoration:none;
+      color: white;
+      font-weight: bold;
+      opacity: .75;
+    }
+    @media screen and (max-width:375px) {
+      .container{
+        width: 90%;
+      }
+    }
+    @media screen and (max-width:700px) {
+      .container{
+        width:80%;
+        height: 80%;
+      }
+    }
+    .attribution {
+      font-size: 11px; 
+      text-align: center;
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="img/avatar-jessica.jpeg" alt="avatar-jessica">
+    <h3>Jessica Randall</h3>
+    <p class="location">London, United Kingdom</p>
+    <p class="title">"Front-end developer and avid reader."</p>
+    <button><a href="#">GitHub</a></button>
+    <button><a href="#">Frontend Mentor</a></button>
+    <button><a href="#">LinkedIn</a></button>
+    <button><a href="#">Twitter</a></button>
+    <button><a href="#">Instagram</a></button>  
+  </div>
+  
+  <div class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></p> 
+    <p>Coded by <a href="#https://github.com/Kamesh-T">Kamesh</a></p>
+  </div>
+</body>
+</html>
