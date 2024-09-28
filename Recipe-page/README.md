@@ -1,7 +1,7 @@
 # Frontend-Mentor Challenges
 # Recipe Page
 
-- Built with
+ Built with
 - HTML
 - CSS Flex
 - Media Queries
