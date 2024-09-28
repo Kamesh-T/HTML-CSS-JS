@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- typography1 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+  <!-- typography2 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Recipe page</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Outfit;
+    }
+    :root{
+      --white:hsl(0, 0%, 100%);
+      --stone-100: hsl(30, 54%, 90%);
+      --stone-150: hsl(30, 18%, 87%);
+      --stone-600: hsl(30, 10%, 34%);
+      --stone-900: hsl(24, 5%, 18%);
+      --brown-800: hsl(14, 45%, 36%);
+      --rose-800: hsl(332, 51%, 32%);
+      --rose-50: hsl(330, 100%, 98%);
+    }
+    p,li{ 
+      line-height: 1.6;
+      font-weight: 400;
+      font-size: 16px;
+    }
+    h1{
+      margin:.5rem;
+      font-weight: 700;
+    }
+    h2{
+      color: var(--brown-800);
+      margin:.5rem;
+      font-weight: 600;
+    }
+    h3{
+      color: var(--rose-800);
+      margin:.5rem;
+    }
+    body{
+      background-color: var(--stone-100);
+      padding: 1.5rem;
+      /* flex */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    main{
+      background-color: var(--white);
+      width:50%;
+      height:auto;
+      padding:1rem;
+      border-radius: 10px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+    img{
+      width:95%;
+      height: 20%;
+      border-radius:10px;
+    }
+    ul,ol,header>p{
+      padding-left: 2rem;
+    }
+    header{
+      margin-left:0.5rem;
+    }
+    #preparation{
+      background-color: var(--rose-50);
+      padding: 1rem;
+      height: auto;
+      width:95%;
+      border-radius: 10px;
+      padding-left: 2rem;
+    }
+    #ingredients{
+      height: auto;
+      width:95%;
+    }
+    #instructions{
+      height: auto;
+      width: 95%;
+    }
+    #nutrition{
+      height: auto;
+      width:95%;
+    }
+    #nutrition>ul>li{
+      display: flex;
+      justify-content: space-between;
+    }
+    .left{
+      margin-left: .5rem;
+    }
+    .right{
+      margin-right:5rem;
+    }
+    .horizontal-line{
+      width:90%;
+      height:.25rem;
+      background-color: var(--stone-150);
+    }
+    .attribution { 
+      font-size: 11px; 
+      text-align: center;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+   }
+    @media screen and (max-width:700px) {
+      main{
+        width: 100%;
+      }
+      body{
+        padding: 0;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <main>
+    <img src="./images/image-omelette.jpeg" alt="omelette-image">
+    <header>
+      <h1>Simple Omelette Recipe</h1>
+      <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+        to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+    </header>
+    <section id="preparation">
+      <h3>Preparation time</h3>
+      <ul>
+        <li><b>Total:</b> Approximately 10 minutes</li>
+        <li><b>Preparation:</b> 5 minutes</li>
+        <li><b>Cooking:</b> 5 minutes</li>
+      </ul>
+    </section>
+    <section id="ingredients">
+      <h2>Ingredients</h2>
+      <ul>
+        <li>2-3 large eggs</li>
+        <li>Salt, to taste</li>
+        <li>Pepper, to taste</li>
+        <li>1 tablespoon of butter or oil</li>
+        <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      </ul>
+    </section>
+    <div class="horizontal-line"></div>
+    <section id="instructions">
+      <h2>Instructions</h2>
+      <ol>
+        <li><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+          You can add a tablespoon of water or milk for a fluffier texture.</li>
+        <li><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+        <li><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+          the eggs evenly coat the surface.
+        </li>
+        <li><b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the 
+          middle, sprinkle your chosen fillings over one half of the omelette.</li>
+        <li>
+          <b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the 
+          fillings. Let it cook for another minute, then slide it onto a plate.</li>
+        <li><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
+      </ol>
+    </section>
+    <div class="horizontal-line"></div>
+    <section id="nutrition">
+      <h2>Nutrition</h2>
+      <p>The table below shows nutritional values per serving without the additional fillings.</p>
+      <ul>
+        <li>
+          <p class="left">Calories<p>
+          <p class="right">277kcal</p>
+        </li>
+        <hr>
+        <li>
+          <p class="left">Carbs</p>
+          <p class="right">0g</p>
+        </li>
+        <hr>
+        <li>
+          <p class="left">Protein</p>
+          <p class="right">20g</p>
+        </li>
+        <hr>
+        <li>
+          <p class="left">Fat</p>
+          <p class="right">22g</p>
+        </li>
+      </ul>
+    </section>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/Kamesh-T/">Kamesh</a>.
+    </div>
+  </main>  
+</body>
+</html>
